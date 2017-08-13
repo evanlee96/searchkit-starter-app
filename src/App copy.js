@@ -13,8 +13,6 @@ import './index.css'
 const host = "http://demo.searchkit.co/api/movies"
 const searchkit = new SearchkitManager(host)
 
-
-/*
 const MovieHitsGridItem = (props)=> {
   const {bemBlocks, result} = props
   let url = "http://www.imdb.com/title/" + result._source.imdbId
@@ -115,6 +113,5 @@ class App extends Component {
     );
   }
 }
-*/
 
 export default App;
