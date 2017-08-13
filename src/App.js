@@ -10,8 +10,9 @@ import { SearchkitManager,SearchkitProvider,
   ActionBar, ActionBarRow, SideBar } from 'searchkit'
 import './index.css'
 
-const host = "http://demo.searchkit.co/api/movies"
+const host = "http://http://54.211.234.124:9200/"
 const searchkit = new SearchkitManager(host)
+
 
 class App extends Component{
   render() {
