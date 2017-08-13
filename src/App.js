@@ -13,7 +13,20 @@ import './index.css'
 const host = "http://demo.searchkit.co/api/movies"
 const searchkit = new SearchkitManager(host)
 
-
+class App extends Component{
+  render() {
+    return (
+      <SearchkitProvider searchkit={searchkit}>
+        <Layout>
+          <TopBar>
+            <div className="my-logo">Searchkit Acme co</div>
+            <SearchBox autofocus={true} searchOnChange={true} prefixQueryFields={["actors^1","type^2","languages","title^10"]}/>
+          </TopBar>
+        </Layout>
+      </SearchkitProvider>
+    );
+  }
+}
 /*
 const MovieHitsGridItem = (props)=> {
   const {bemBlocks, result} = props
